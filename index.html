@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<title>A working website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="script" href="script.js">
+<!--<link rel="script" href="script.js">-->
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Plans</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+      </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>CHRASTH & CO..</b></h1>
+    <p><i><b>The product which solves real world problem..</i></b></p>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./logo2.png" width="100" height="100" alt="">
+    </a>
+    
+  </nav>
+  
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides">
+      <img src="./carrot.jpg" style="width:50%;height: 100%;" >
+      <div class="w3-display-center w3-container w3-padding-32" >
+        <span class="w3-white w3-padding-large w3-animate-bottom"><b>CARROT POWDERD AFTER DEHYDRATION</b></span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="./green.jpg" style="width:50%">
+      <div class="w3-display-middle w3-container w3-padding-32 w3-align-center">
+        <span class="w3-white w3-padding-large w3-animate-bottom"><b>GREEN LEAFY VEGETABLES</b></span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="./cofee.jpg" style="width:100%;height: 50%;">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom"><b>COFEE BEING POWDERED</b></span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Quality</h3>
+      <p>Engineered with elegance, designed for creating impression!!</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3>Branding</h3>
+      <p>Discovery of the unkonown <br>side of the       luxury... </p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Consultation</h3>
+      <p>Allowed to use anywhere and everywhere with no preservatives .</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Promises</h3>
+      <p>Embraces the  hygiene gurantees the processs  risk free product </p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+    <div class="w3-center w3-padding-64">
+      <h3>Pricing Plans</h3>
+      <p>Choose a pricing plan that fits your needs.</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Herbal Extracts</li>
+        <!--<li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">-->
+          <img src="./green bag.jpg" class="center" style="width: 100%;" height="50%;">
+          <h2 class="w3-wide">Rs. 149/-</h2>
+          <span class="w3-opacity"><b>Every order</b></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">BUY</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Beetroot Extracts</li>
+        <!--<li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">-->
+          <img src="./beetroot.png" class="center" style="width: 100%;" height="100%;">
+          <h2 class="w3-wide">Rs. 199/-</h2>
+          <span class="w3-opacity"><b><i>Per order</b></i></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">BUY</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Combo Of Multiple Extracts</li>
+       <!--  <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">Grid -->
+          <img src="./combo.jpg" class="center" style="width: 100%;" height="100%;">
+          <h2 class="w3-wide">Rs.999 /-</h2>
+          <span class="w3-opacity"><b><i>2+1 Combo conatins 1 Rare Extract</i></b></span><br>
+          <span class="w3-opacity"><b><i>Contains Onion,Tomato and special blueberry flavour</i></b></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">BUY</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="./club2.jpg" alt="John" class="center"  style="width:100% ;height: 100%;" >
+        <div class="w3-container">
+          <h3>Deekshith & Darshan Raj </h3>
+          <p class="w3-opacity">Managing Diretors</p>
+          <p>The people behind the succesfull launching of the product..</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="./club3.jpg" alt="Mike"  height="50%"  style="width:100%">
+        <div class="w3-container">
+          <h3>Chirag  And Chinmay</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>The young blood involved in the creation of this product..</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="./club1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Darshan Gowda & Dishanth</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Leaders who presented this idea and implemented those.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-facebook w3-hover-opacity "></i>
+  </div>
+  <img src="./logo2.png" class="w3-align-center" style="width:270px;height:270px ;">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">CHRASTH&CO.in</a></p>
+</footer>
+<script>
+   
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</body>
+</html>
